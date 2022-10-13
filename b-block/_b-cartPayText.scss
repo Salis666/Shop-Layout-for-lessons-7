@@ -1,0 +1,32 @@
+.b-cartPayText {
+            padding: 22px 0 62px 31px;
+
+            @media (max-width: 667px) {
+                        padding: 13.52px 0 37.67px 17.02px;
+            }
+
+            &__name {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #222222;
+
+                        @media (max-width: 667px) {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                        }
+
+                        &_marginBottom {
+                                    margin-bottom: 42px;
+
+                                    @media (max-width: 667px) {
+                                                margin-bottom: 25.85px;
+                                    }
+                        }
+            }
+}

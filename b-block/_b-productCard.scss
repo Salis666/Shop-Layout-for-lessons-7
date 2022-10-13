@@ -1,0 +1,192 @@
+.b-productCard {
+
+            padding-top: 128px;
+            padding-bottom: 128px;
+
+            &_grid {
+                        display: grid;
+                        grid-gap: 30px;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-areas:
+                                    "manBlueShirt manBlueHoodies womanBeigeShirt"
+                        ;
+            }
+
+            &__card {
+
+                        background: #F8F8F8;
+
+
+
+            }
+
+            &__img {
+                        width: 100%;
+            }
+
+            &__name {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #000000;
+                        padding-top: 24.3px;
+                        padding-left: 9px;
+            }
+
+            &__text {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #5D5D5D;
+                        padding-top: 12.65px;
+                        padding-left: 9px;
+            }
+
+            &__price {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #F16D7F;
+                        padding-top: 18px;
+                        padding-bottom: 20px;
+                        padding-left: 9px;
+            }
+
+
+}
+
+@media (max-width: 1024px) {
+
+            .b-productCard {
+
+                        padding-top: 128px;
+                        padding-bottom: 128px;
+
+                        &__card_none {
+                                    display: none;
+                        }
+
+                        &_grid {
+                                    display: grid;
+                                    grid-gap: 16px;
+                                    grid-template-columns: repeat(2, 1fr);
+                                    grid-template-areas:
+                                                "manBlueShirt manBlueHoodies"
+                                    ;
+                        }
+
+                        &__card {
+
+                                    background: #F8F8F8;
+
+                        }
+
+                        &__name {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                    color: #000000;
+                                    padding-top: 24.3px;
+                                    padding-left: 9px;
+                        }
+
+                        &__text {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    color: #5D5D5D;
+                                    padding-top: 12.65px;
+                                    padding-left: 9px;
+                        }
+
+                        &__price {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #F16D7F;
+                                    padding-top: 18px;
+                                    padding-bottom: 20px;
+                                    padding-left: 9px;
+                        }
+
+
+            }
+
+}
+
+@media (max-width: 667px) {
+
+            .b-productCard {
+
+                        padding-top: 128px;
+                        padding-bottom: 128px;
+
+                        &__card_none {
+                                    display: none;
+                        }
+
+                        &_grid {
+                                    display: flex;
+                                    flex-direction: column;
+                        }
+
+                        &__img {
+                                    width: 100%;
+                        }
+
+                        &__card {
+
+                                    background: #F8F8F8;
+
+                        }
+
+                        &__name {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                    color: #000000;
+                                    padding-top: 24.3px;
+                                    padding-left: 9px;
+                        }
+
+                        &__text {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    color: #5D5D5D;
+                                    padding-top: 12.65px;
+                                    padding-left: 9px;
+                        }
+
+                        &__price {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #F16D7F;
+                                    padding-top: 18px;
+                                    padding-bottom: 20px;
+                                    padding-left: 9px;
+                        }
+
+
+            }
+
+}

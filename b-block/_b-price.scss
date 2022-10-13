@@ -1,0 +1,61 @@
+.b-price {
+
+            &__text {
+                        display: block;
+
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: #575757;
+
+                        @media (max-width: 667px) {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                        }
+
+                        &_orange {
+                                    color: #F16D7F
+                        }
+
+                        &_marginLeft {
+                                    margin-left: 6px;
+                        }
+            }
+
+            &__size {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #656565;
+                        border: 1px solid #EAEAEA;
+                        padding: 1.5px 17px;
+
+                        @media (max-width: 667px) {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 10px;
+                                    line-height: 12px;
+                                    padding: 1px 9px;
+                        }
+
+                        &_marginLeft {
+                                    margin-left: 24px;
+                        }
+            }
+
+            &_flex {
+                        display: flex;
+            }
+
+            &_marginBottom {
+                        margin-bottom: 6px;
+            }
+}

@@ -1,0 +1,20 @@
+.b-seePay {
+
+            position: relative;
+            height: 1494px;
+
+            &__container {
+                        &_flex {
+                                    display: flex;
+                                    justify-content: center;
+                        }
+            }
+}
+
+@media (max-width: 768px) {
+            .b-seePay {
+
+                        position: relative;
+                        height: 1375px;
+            }
+}

@@ -1,0 +1,45 @@
+.b-see {
+            &_flex {
+                        display: flex;
+                        justify-content: space-between;
+            }
+
+            &__arrowBlack {
+                        padding-top: 365px;
+                        padding-bottom: 365px;
+            }
+
+            &__arrowRed {
+                        padding-top: 365px;
+                        padding-bottom: 365px;
+            }
+
+            background-image: url(product_pic/woman_white_T-shirt.png);
+            background-size: 100% 100%;
+}
+
+@media (max-width: 1024px) {
+
+            .b-see {
+                        &_flex {
+                                    display: flex;
+                                    justify-content: space-between;
+                        }
+
+                        &__arrowBlack {
+                                    padding-top: 360px;
+                                    padding-bottom: 360px;
+                        }
+
+                        &__arrowRed {
+                                    padding-top: 360px;
+                                    padding-bottom: 360px;
+                        }
+
+                        background-image: url(product_pic/woman_white_T-shirt.png);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+            }
+
+}

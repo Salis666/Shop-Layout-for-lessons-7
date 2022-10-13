@@ -1,0 +1,91 @@
+.b-regForm {
+
+            &__name {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #222222;
+
+                        &_margin {
+                                    margin-top: 40px;
+                                    margin-bottom: 20px;
+                        }
+            }
+
+            &__input {
+                        padding: 13px 0 16px 17px;
+                        border: 1px solid #A4A4A4;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #B1B1B1;
+
+                        &_marginBottom {
+                                    margin-bottom: 20px;
+                        }
+
+            }
+
+            &_flex {
+                        display: flex;
+                        flex-direction: column;
+            }
+
+            &__gender {
+
+                        p {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 11px;
+                                    line-height: 13px;
+                                    color: #000000;
+                                    padding-left: 10px;
+                                    padding-right: 20px;
+                        }
+
+                        &_margin {
+                                    margin-top: 31px;
+                        }
+
+                        &_flex {
+                                    display: flex;
+                                    align-items: center;
+                        }
+            }
+
+            &__text {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #B1B1B1;
+
+                        &_margin {
+                                    margin-top: 15px;
+                                    margin-bottom: 39px;
+                        }
+            }
+
+            &__button {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #FFFFFF;
+                        padding: 16px 0 17px 0;
+                        width: 167px;
+                        background: #F16D7F;
+                        border: none;
+
+                        img {
+                                    padding-left: 20px;
+                        }
+            }
+}

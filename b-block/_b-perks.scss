@@ -1,0 +1,67 @@
+.b-perks {
+            &_margin {
+                        margin-top: 40px;
+            }
+
+            &__name {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #000000;
+
+                        @media (min-width: 1024px) {
+                                    font-weight: 300;
+                                    font-size: 24px;
+                                    line-height: 29px;
+                        }
+            }
+
+            &__text {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #000000;
+                        padding-top: 32px;
+
+                        @media (min-width: 1024px) {
+                                    font-weight: 300;
+                                    font-size: 24px;
+                                    line-height: 29px;
+                        }
+            }
+
+            &__list {
+                        list-style-position: outside;
+                        list-style-image: url("b-block/li.svg");
+                        padding-left: 30px;
+
+                        li {
+                                    padding-bottom: 16px;
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #000000;
+                                    padding-left: 23px;
+
+                                    @media (min-width: 1024px) {
+                                                font-weight: 300;
+                                                font-size: 24px;
+                                                line-height: 29px;
+                                    }
+                        }
+
+                        &_margin {
+                                    margin-top: 22px;
+                                    margin-bottom: 100px;
+                        }
+            }
+
+
+
+}

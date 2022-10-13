@@ -1,0 +1,111 @@
+.b-proceed {
+            background-color: #F5F3F3;
+            width: 360px;
+
+            &_flex {
+                        display: flex;
+                        flex-direction: column;
+            }
+
+            &_margin {
+                        margin-top: 57px;
+
+                        @media (max-width: 1024px) {
+                                    margin-top: 39px;
+                                    margin-left: 15px;
+                        }
+
+                        @media (max-width: 667px) {
+                                    margin-top: 48px;
+                                    margin-left: 0;
+                        }
+            }
+
+            &__sub {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: #4A4A4A;
+            }
+
+            &__subPrice {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: #4A4A4A;
+                        padding-left: 10px;
+            }
+
+            &__subBox {
+                        &_flex {
+                                    display: flex;
+                        }
+
+                        align-self: flex-end;
+                        padding-top: 39px;
+                        padding-bottom: 12px;
+                        padding-left: 44px;
+                        padding-right: 43px;
+            }
+
+            &__grand {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #222222;
+            }
+
+            &__grandPrice {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #F16D7F;
+                        padding-left: 10px;
+            }
+
+            &__grandBox {
+                        &_flex {
+                                    display: flex;
+                        }
+
+                        align-self: flex-end;
+                        padding-left: 44px;
+                        padding-right: 43px;
+                        padding-bottom: 21px;
+            }
+
+            &__line {
+                        max-width: 275px;
+                        align-self: center;
+            }
+
+            &__botton {
+                        display: block;
+                        text-decoration: none;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #FFFFFF;
+                        text-decoration: none;
+                        background-color: #F16D7F;
+                        padding: 15px 0 16px 0;
+                        max-width: 273px;
+                        text-align: center;
+
+                        &_margin {
+                                    margin-top: 32px;
+                                    margin-left: 44px;
+                                    margin-bottom: 42px;
+                        }
+            }
+}

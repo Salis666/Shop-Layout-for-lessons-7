@@ -1,0 +1,70 @@
+.b-bottonPay {
+
+            &_marginTop {
+                        margin-top: 72px;
+            }
+
+            &_flex {
+                        display: flex;
+                        justify-content: space-between;
+            }
+
+            &__bottonClear {
+                        padding: 17px 40px;
+                        background-color: white;
+                        border: 1px solid #A4A4A4;
+                        text-decoration: none;
+
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+
+                        @media (max-width: 667px) {
+                                    padding: 9px 18px;
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                    text-align: center;
+                        }
+
+                        &:hover {
+                                    background-color: #A4A4A4;
+                        }
+            }
+
+            &__bottonContinue {
+                        padding: 17px 40px;
+                        background-color: white;
+                        border: 1px solid #A4A4A4;
+
+                        text-decoration: none;
+
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+
+                        @media (max-width: 667px) {
+                                    padding: 9px 18px;
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                    text-align: center;
+                        }
+
+
+                        &:hover {
+                                    background-color: #A4A4A4;
+                        }
+            }
+
+}

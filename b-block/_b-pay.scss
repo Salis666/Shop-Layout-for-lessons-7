@@ -1,0 +1,340 @@
+.b-pay {
+
+            max-width: 1141px;
+            width: 100%;
+            height: 601PX;
+            border-width: 1px;
+            border: 1px solid #EAEAEA;
+            background: white;
+
+            &_absolute {
+                        position: absolute;
+                        top: 700px;
+            }
+
+            &__nameBlock {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #F16D7F;
+                        text-align: center;
+                        padding-top: 64.5px;
+            }
+
+            &__redLine {
+                        padding-left: 47%;
+                        padding-top: 12px;
+            }
+
+            &__textName {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #4D4D4D;
+                        text-align: center;
+                        padding-top: 12px;
+            }
+
+            &__text {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-align: center;
+                        color: #5E5E5E;
+                        text-align: center;
+                        width: 555px;
+                        padding-left: 292px;
+                        padding-top: 48.5px;
+            }
+
+            &__price {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #EF5B70;
+                        text-align: center;
+                        padding-top: 32.3px;
+            }
+
+            &__greyLine {
+                        padding-left: 250px;
+                        padding-top: 64.5px;
+            }
+
+            &__filter {
+
+                        padding-left: 405px;
+                        padding-top: 64.5px;
+
+                        &_flex {
+                                    display: flex;
+                        }
+            }
+
+            &__filterText {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #6F6E6E;
+
+            }
+
+            &__textBox {
+                        padding-right: 33px;
+
+                        &_flex {
+                                    display: flex;
+                        }
+            }
+
+            &__filterIcon {
+                        padding-left: 9px;
+                        width: 10px;
+            }
+
+            &__button {
+                        padding: 48px 0 64.5px 464px;
+            }
+}
+
+
+@media (max-width: 1024px) {
+            .b-pay {
+
+                        max-width: 100%;
+                        height: 601PX;
+                        border-width: 1px;
+                        border: 1px solid #EAEAEA;
+                        background: white;
+
+                        &_absolute {
+                                    display: flex;
+                                    flex-direction: column;
+                                    left: 0;
+                        }
+
+                        &__nameBlock {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    color: #F16D7F;
+                                    text-align: center;
+                                    padding-top: 64.5px;
+                        }
+
+                        &__redLine {
+                                    width: 63px;
+                                    align-self: center;
+                                    padding-left: 0;
+                        }
+
+                        &__textName {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 18px;
+                                    line-height: 22px;
+                                    color: #4D4D4D;
+                                    text-align: center;
+                                    padding-top: 12px;
+                        }
+
+                        &__text {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    text-align: center;
+                                    color: #5E5E5E;
+                                    text-align: center;
+                                    width: 326px;
+                                    padding-left: 0;
+                                    padding-top: 48.5px;
+                                    align-self: center;
+                        }
+
+                        &__price {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 24px;
+                                    line-height: 29px;
+                                    color: #EF5B70;
+                                    text-align: center;
+                                    padding-top: 32.3px;
+                        }
+
+                        &__greyLine {
+                                    align-self: center;
+                                    padding-left: 0;
+                        }
+
+                        &__filter {
+
+                                    padding-left: 0;
+                                    padding-top: 64.5px;
+                                    align-self: center;
+
+                                    &_flex {
+                                                display: flex;
+                                    }
+                        }
+
+
+                        &__filterText {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 10px;
+                                    line-height: 12px;
+                                    color: #6F6E6E;
+                        }
+
+                        &__textBox {
+                                    padding-right: 33px;
+
+                                    &_flex {
+                                                display: flex;
+                                    }
+                        }
+
+                        &__filterIcon {
+                                    padding-left: 7px;
+                        }
+
+                        &__button {
+                                    padding: 48px 0 64.5px 0;
+                                    align-self: center;
+                        }
+            }
+}
+
+@media (max-width: 667px) {
+
+            .b-pay {
+
+                        max-width: 100%;
+                        height: 601PX;
+                        border-width: 1px;
+                        border: 1px solid #EAEAEA;
+                        background: white;
+
+                        &_absolute {
+                                    display: flex;
+                                    flex-direction: column;
+                                    left: 0;
+                        }
+
+                        &__nameBlock {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    color: #F16D7F;
+                                    text-align: center;
+                                    padding-top: 64.5px;
+                        }
+
+                        &__redLine {
+                                    width: 63px;
+                                    align-self: center;
+                                    padding-left: 0;
+                        }
+
+                        &__textName {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 18px;
+                                    line-height: 22px;
+                                    color: #4D4D4D;
+                                    text-align: center;
+                                    padding-top: 12px;
+                        }
+
+                        &__text {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    text-align: center;
+                                    color: #5E5E5E;
+                                    text-align: center;
+                                    width: 326px;
+                                    padding-left: 0;
+                                    padding-top: 48.5px;
+                                    align-self: center;
+                        }
+
+                        &__price {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 24px;
+                                    line-height: 29px;
+                                    color: #EF5B70;
+                                    text-align: center;
+                                    padding-top: 32.3px;
+                        }
+
+                        &__greyLine {
+                                    width: 175px;
+                                    align-self: center;
+                                    padding-left: 0;
+                        }
+
+                        &__filter {
+
+                                    padding-left: 0;
+                                    padding-top: 64.5px;
+                                    align-self: center;
+
+                                    &_flex {
+                                                display: flex;
+                                    }
+                        }
+
+
+                        &__filterText {
+                                    font-family: 'Lato';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 10px;
+                                    line-height: 12px;
+                                    color: #6F6E6E;
+                        }
+
+                        &__textBox {
+                                    padding-right: 33px;
+
+                                    &_flex {
+                                                display: flex;
+                                    }
+                        }
+
+                        &__filterIcon {
+                                    padding-left: 7px;
+                        }
+
+                        &__button {
+                                    padding: 48px 0 64.5px 0;
+                                    align-self: center;
+                        }
+            }
+
+}

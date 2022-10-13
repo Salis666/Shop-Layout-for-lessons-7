@@ -1,0 +1,84 @@
+$inputwidth: 343px;
+$marginButtom: 20px;
+
+.b-payForm {
+            &_flex {
+                        display: flex;
+                        flex-direction: column;
+            }
+
+            &__name {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #222222;
+
+                        &_marginButtom {
+                                    margin-bottom: $marginButtom;
+                        }
+            }
+
+            &__sityInput {
+                        padding: 13px 0 16px 17px;
+                        width: $inputwidth;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #B1B1B1;
+
+                        &_marginButtom {
+                                    margin-bottom: $marginButtom;
+                        }
+            }
+
+            &__stateInput {
+                        padding: 13px 0 16px 17px;
+                        width: $inputwidth;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #B1B1B1;
+
+                        &_marginButtom {
+                                    margin-bottom: $marginButtom;
+                        }
+            }
+
+            &__postcodeInput {
+                        padding: 13px 0 16px 17px;
+                        width: $inputwidth;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #B1B1B1;
+
+                        &_marginButtom {
+                                    margin-bottom: $marginButtom;
+                        }
+            }
+
+            &__buttonSubmit {
+                        padding: 10px 0 12px 0;
+                        background-color: white;
+                        max-width: 101px;
+                        border: 1px solid #A4A4A4;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: #4A4A4A;
+
+                        &:hover {
+                                    background-color: #A4A4A4;
+                        }
+            }
+}
