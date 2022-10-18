@@ -27,6 +27,15 @@
   text-decoration: none;
 }
 
+.menu .container .menu_logo_magnifier_botton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .menu .container .menu_logo_magnifier_botton .logo_margin {
   margin-right: 41px;
 }
@@ -737,6 +746,12 @@
     padding-right: 16px;
   }
   .menu .menu_logo_magnifier_botton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 32px;
   }
   .menu .menu_other_botton {
@@ -877,6 +892,12 @@
     display: none;
   }
   .menu .container .menu_logo_magnifier_botton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 16px;
   }
   .photo_logo .under_objective_menu .box_photo_man {

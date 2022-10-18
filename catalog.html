@@ -10,331 +10,219 @@
 </head>
 
 <body>
+            <div id="app">
+                    <div class="menu">
+                                <div class="container">
+                                            <div class="menu_logo_magnifier_botton">
+                                                        <a href="index.html" class="menu_logo_botton link">
+                                                                    <img class="logo_margin" src="pic/logo_botton.svg"
+                                                                                alt="logo">
+                                                        </a>
+                                                        <search></search>
+                                            </div>
+                                            <div class="menu_other_botton">
+                                                        <a href="#" class="menu_dashes_botton link">
+                                                                    <img class="other_botton_margin" src="pic/dashes_botton.svg"
+                                                                                alt="dash">
+                                                        </a>
+                                                        <a href="registration.html" class="menu_pers_botton link">
+                                                                    <img class="other_botton_margin link"
+                                                                                src="pic/pers_button.svg" alt="pers">
+                                                        </a>
+                                                        <a href="cart.html" class="menu_basket_botton link">
+                                                                    <img src="pic/basket_botton.svg" alt="bask">
+                                                        </a>
+                                            </div>
+                                </div>
+                    </div>
 
-            <div class="menu">
-                        <div class="container">
-                                    <div class="menu_logo_magnifier_botton">
-                                                <a href="index.html" class="menu_logo_botton link">
-                                                            <img class="logo_margin" src="pic/logo_botton.svg"
-                                                                        alt="logo">
-                                                </a>
-                                                <a href="#" class="menu_magnifier_botton link">
-                                                            <img src="pic/magnifier_botton.svg" alt="magn">
-                                                </a>
-                                    </div>
-                                    <div class="menu_other_botton">
-                                                <a href="#" class="menu_dashes_botton link">
-                                                            <img class="other_botton_margin" src="pic/dashes_botton.svg"
-                                                                        alt="dash">
-                                                </a>
-                                                <a href="registration.html" class="menu_pers_botton link">
-                                                            <img class="other_botton_margin link"
-                                                                        src="pic/pers_button.svg" alt="pers">
-                                                </a>
-                                                <a href="cart.html" class="menu_basket_botton link">
-                                                            <img src="pic/basket_botton.svg" alt="bask">
-                                                </a>
-                                    </div>
-                        </div>
+                    <div class="photo_logo">
+
+                                <div class="under_objective_menu">
+                                            <div class="photo_logo_dark objective_menu_none">
+                                            </div>
+
+                                            <div class="objective_menu objective_menu_none">
+                                                        <a href="#"><img class="objective_menu_close"
+                                                                                src="pic/objectiv_menu_close.svg"
+                                                                                alt="close"></a>
+                                                        <h2 class="objective_menu_name">MENU</h2>
+                                                        <h3 class="objective_menu_categories">MAN</h3>
+                                                        <p class="objective_menu_text">Accessories</p>
+                                                        <p class="objective_menu_text">Bags</p>
+                                                        <p class="objective_menu_text">Denim</p>
+                                                        <p class="objective_menu_text">T-Shirts</p>
+                                                        <h3 class="objective_menu_categories">WOMAN</h3>
+                                                        <p class="objective_menu_text">Accessories</p>
+                                                        <p class="objective_menu_text">Jakets & Coats</p>
+                                                        <p class="objective_menu_text">Polos</p>
+                                                        <p class="objective_menu_text">T-Shirts</p>
+                                                        <p class="objective_menu_text">Shirts</p>
+                                                        <h3 class="objective_menu_categories">KIDS</h3>
+                                                        <p class="objective_menu_text">Accessories</p>
+                                                        <p class="objective_menu_text">Jakets & Coats</p>
+                                                        <p class="objective_menu_text">Polos</p>
+                                                        <p class="objective_menu_text">T-Shirts</p>
+                                                        <p class="objective_menu_text">Shirts</p>
+                                                        <p class="objective_menu_text">Bags</p>
+                                            </div>
+
+                                </div>
+
+                                <div class="header_catalog">
+                                            <div class="container">
+                                                        <h1 class="catalog_header_name">NEW ARRIVALS</h1>
+                                                        <div class="crumbs">
+                                                                    <h2 class="crumbs_home">HOME / MEN / </h2>
+                                                                    <h2 class="crumbs_arrivals">NEW ARRIVALS</h2>
+                                                        </div>
+                                            </div>
+                                </div>
+
+                    </div>
+
+                    <div class="filter-menu container">
+                                <div class="filter">
+                                            <h3 class="filter_text">FILTER</h3>
+                                            <img class="filter_icon" src="catalog_pic/filter_icon.svg" alt="icon">
+                                </div>
+                                <div class="catalog-menu">
+                                            <div class="catalog-menu_box">
+                                                        <p class="catalog-menu_text">TRENDING NOW</p>
+                                                        <img class="icon_catalog" src="catalog_pic/catalog-menu_icon.svg"
+                                                                    alt="icon">
+                                            </div>
+                                            <div class="catalog-menu_box">
+                                                        <p class="catalog-menu_text">SIZE</p>
+                                                        <img class="icon_catalog" src="catalog_pic/catalog-menu_icon.svg"
+                                                                    alt="icon">
+                                            </div>
+                                            <div class="catalog-menu_box">
+                                                        <p class="catalog-menu_text">PRICE</p>
+                                                        <img class="icon_catalog" src="catalog_pic/catalog-menu_icon.svg"
+                                                                    alt="icon">
+                                            </div>
+                                </div>
+                    </div>
+
+                    <catalog :products="filtered"></catalog>
+
+                    <div class="catalog_list_box">
+                                <a class="catalog_list" href="#"><img src="catalog_pic/catalog-list's.svg" alt="catalog"></a>
+                    </div>
+
+                    <footer>
+                                <div class="black_footer">
+                                            <div class="container">
+                                                        <div class="black_footer_flexBox">
+                                                                    <div class="pic_center_flex">
+                                                                                <img class="black_footer_pic"
+                                                                                            src="pic/black_footer_car.svg"
+                                                                                            alt="pic">
+                                                                                <h2 class="black_footer_name">Free Delivery</h2>
+                                                                                <p class="black_footer_text">
+                                                                                            Worldwide delivery on all. Authorit
+                                                                                            tively morph next-generation innov
+                                                                                            tion with
+                                                                                            extensive
+                                                                                            models.
+                                                                                </p>
+                                                                    </div>
+                                                                    <div class="pic_center_flex">
+                                                                                <img class="black_footer_pic"
+                                                                                            src="pic/black_footer_percent.svg"
+                                                                                            alt="pic">
+                                                                                <h2 class="black_footer_name">Sales & discounts
+                                                                                </h2>
+                                                                                <p class="black_footer_text">
+                                                                                            Worldwide delivery on all. Authorit
+                                                                                            tively morph
+                                                                                            next-generation innov tion with
+                                                                                            extensive
+                                                                                            models.
+                                                                                </p>
+                                                                    </div>
+                                                                    <div class="pic_center_flex">
+                                                                                <img class="black_footer_pic"
+                                                                                            src="pic/black_footer_korona.svg"
+                                                                                            alt="pic">
+                                                                                <h2 class="black_footer_name">Quality assurance
+                                                                                </h2>
+                                                                                <p class="black_footer_text">
+                                                                                            Worldwide delivery on all. Authorit
+                                                                                            tively morph
+                                                                                            next-generation innov tion with
+                                                                                            extensive
+                                                                                            models.
+                                                                                </p>
+                                                                    </div>
+                                                        </div>
+                                            </div>
+                                </div>
+
+                                <div class="grey_footer_box">
+                                            <div class="container">
+                                                        <div class="woman_face_footer_box">
+                                                                    <img class="woman_face_footer"
+                                                                                src="pic/woman_face_footer.png" alt="photo">
+
+
+                                                                    <div class="grey_footer_woman_text_box">
+                                                                                <p class="grey_footer_woman_text">
+                                                                                            “Vestibulum quis porttitor dui!
+                                                                                            Quisque viverra
+                                                                                            nunc mi, a
+                                                                                            pulvinar
+                                                                                            purus condimentum“
+                                                                                </p>
+                                                                    </div>
+
+                                                        </div>
+                                                        <div class="grey_footer_email_box">
+                                                                    <h2 class="grey_footer_name">SUBSCRIBE</h2>
+                                                                    <p class="grey_footer_text">FOR OUR NEWLETTER AND PROMOTION
+                                                                    </p>
+                                                                    <form class="form_footer_email" action="#">
+                                                                                <input class="grey_footer_email" type="email"
+                                                                                            placeholder="Enter Youur Email">
+                                                                                <button class="button_footer"
+                                                                                            type="submit">Subscribe</button>
+
+                                                                    </form>
+
+                                                        </div>
+                                            </div>
+
+                                            <div class="grey_footer-background">
+                                            </div>
+                                </div>
+
+
+                                <div class="protection">
+                                            <div>
+                                                        <p class="protection_text">© 2021 Brand All Rights Reserved.</p>
+                                            </div>
+                                            <div class="link_box">
+                                                        <a class="footer_link" href="http://www.facebook.com"><img
+                                                                                src="pic/link_facebook.svg" alt="facebook"></a>
+                                                        <a class="footer_link" href="https://instagram-my.ru"><img
+                                                                                src="pic/link_instagram.svg"
+                                                                                alt="instagram"></a>
+                                                        <a class="footer_link" href="#"><img src="pic/link_hz.svg" alt=""></a>
+                                                        <a class="footer_link" href="https://twitter.com/"><img
+                                                                                src="pic/link_twitter.svg" alt=""></a>
+                                            </div>
+                                </div>
+                    </footer>
             </div>
 
-            <div class="photo_logo">
 
-                        <div class="under_objective_menu">
-                                    <div class="photo_logo_dark objective_menu_none">
-                                    </div>
-
-                                    <div class="objective_menu objective_menu_none">
-                                                <a href="#"><img class="objective_menu_close"
-                                                                        src="pic/objectiv_menu_close.svg"
-                                                                        alt="close"></a>
-                                                <h2 class="objective_menu_name">MENU</h2>
-                                                <h3 class="objective_menu_categories">MAN</h3>
-                                                <p class="objective_menu_text">Accessories</p>
-                                                <p class="objective_menu_text">Bags</p>
-                                                <p class="objective_menu_text">Denim</p>
-                                                <p class="objective_menu_text">T-Shirts</p>
-                                                <h3 class="objective_menu_categories">WOMAN</h3>
-                                                <p class="objective_menu_text">Accessories</p>
-                                                <p class="objective_menu_text">Jakets & Coats</p>
-                                                <p class="objective_menu_text">Polos</p>
-                                                <p class="objective_menu_text">T-Shirts</p>
-                                                <p class="objective_menu_text">Shirts</p>
-                                                <h3 class="objective_menu_categories">KIDS</h3>
-                                                <p class="objective_menu_text">Accessories</p>
-                                                <p class="objective_menu_text">Jakets & Coats</p>
-                                                <p class="objective_menu_text">Polos</p>
-                                                <p class="objective_menu_text">T-Shirts</p>
-                                                <p class="objective_menu_text">Shirts</p>
-                                                <p class="objective_menu_text">Bags</p>
-                                    </div>
-
-                        </div>
-
-                        <div class="header_catalog">
-                                    <div class="container">
-                                                <h1 class="catalog_header_name">NEW ARRIVALS</h1>
-                                                <div class="crumbs">
-                                                            <h2 class="crumbs_home">HOME / MEN / </h2>
-                                                            <h2 class="crumbs_arrivals">NEW ARRIVALS</h2>
-                                                </div>
-                                    </div>
-                        </div>
-
-            </div>
-
-            <div class="filter-menu container">
-                        <div class="filter">
-                                    <h3 class="filter_text">FILTER</h3>
-                                    <img class="filter_icon" src="catalog_pic/filter_icon.svg" alt="icon">
-                        </div>
-                        <div class="catalog-menu">
-                                    <div class="catalog-menu_box">
-                                                <p class="catalog-menu_text">TRENDING NOW</p>
-                                                <img class="icon_catalog" src="catalog_pic/catalog-menu_icon.svg"
-                                                            alt="icon">
-                                    </div>
-                                    <div class="catalog-menu_box">
-                                                <p class="catalog-menu_text">SIZE</p>
-                                                <img class="icon_catalog" src="catalog_pic/catalog-menu_icon.svg"
-                                                            alt="icon">
-                                    </div>
-                                    <div class="catalog-menu_box">
-                                                <p class="catalog-menu_text">PRICE</p>
-                                                <img class="icon_catalog" src="catalog_pic/catalog-menu_icon.svg"
-                                                            alt="icon">
-                                    </div>
-                        </div>
-            </div>
-
-            <div class="catalog_grid container">
-                        <div class="catalog_card man_blue_jaket">
-                                    <div>
-                                                <img class="catalog_card_img" src="pic/product/man_blue_jaket.png"
-                                                            alt="photo">
-                                    </div>
-                                    <div class="card_text_box">
-                                                <h3 class="card_name">ELLERY X M'O CAPSULE</h3>
-                                                <p class="card_text">Known for her sculptural takes on traditional
-                                                            tailoring, Australian
-                                                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                                                <p class="card_price">$52.00</p>
-                                    </div>
-                        </div>
-                        <div class="catalog_card blackMen_redShirt">
-                                    <div>
-                                                <img class="catalog_card_img" src="pic/product/blackMen_redShirt.png"
-                                                            alt="photo">
-                                    </div>
-                                    <div class="card_text_box">
-                                                <h3 class="card_name">ELLERY X M'O CAPSULE</h3>
-                                                <p class="card_text">Known for her sculptural takes on traditional
-                                                            tailoring, Australian
-                                                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                                                <p class="card_price">$52.00</p>
-                                    </div>
-                        </div>
-                        <div class="catalog_card man_blue_hoodies">
-                                    <div>
-                                                <img class="catalog_card_img" src="pic/product/man_blue_hoodies.png"
-                                                            alt="photo">
-                                    </div>
-                                    <div class="card_text_box">
-                                                <h3 class="card_name">ELLERY X M'O CAPSULE</h3>
-                                                <p class="card_text">Known for her sculptural takes on traditional
-                                                            tailoring, Australian
-                                                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                                                <p class="card_price">$52.00</p>
-                                    </div>
-                        </div>
-                        <div class="catalog_card man_blue_shirt">
-                                    <div>
-                                                <img class="catalog_card_img" src="pic/product/man_blue_shirt.png"
-                                                            alt="photo">
-                                    </div>
-                                    <div class="card_text_box">
-                                                <h3 class="card_name">ELLERY X M'O CAPSULE</h3>
-                                                <p class="card_text">Known for her sculptural takes on traditional
-                                                            tailoring, Australian
-                                                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                                                <p class="card_price">$52.00</p>
-                                    </div>
-                        </div>
-                        <div class="catalog_card arab_whiteSweater">
-                                    <div>
-                                                <img class="catalog_card_img" src="pic/product/arab_whiteSweater.png"
-                                                            alt="photo">
-                                    </div>
-                                    <div class="card_text_box">
-                                                <h3 class="card_name">ELLERY X M'O CAPSULE</h3>
-                                                <p class="card_text">Known for her sculptural takes on traditional
-                                                            tailoring, Australian
-                                                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                                                <p class="card_price">$52.00</p>
-                                    </div>
-                        </div>
-                        <div class="catalog_card arab_whiteT-shirt">
-                                    <div>
-                                                <img class="catalog_card_img" src="pic/product/arab_whiteT-shirt.png"
-                                                            alt="photo">
-                                    </div>
-                                    <div class="card_text_box">
-                                                <h3 class="card_name">ELLERY X M'O CAPSULE</h3>
-                                                <p class="card_text">Known for her sculptural takes on traditional
-                                                            tailoring, Australian
-                                                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                                                <p class="card_price">$52.00</p>
-                                    </div>
-                        </div>
-                        <div class="catalog_card arab_whiteShirt">
-                                    <div>
-                                                <img class="catalog_card_img" src="pic/product/arab_whiteShirt.png"
-                                                            alt="photo">
-                                    </div>
-                                    <div class="card_text_box">
-                                                <h3 class="card_name">ELLERY X M'O CAPSULE</h3>
-                                                <p class="card_text">Known for her sculptural takes on traditional
-                                                            tailoring, Australian
-                                                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                                                <p class="card_price">$52.00</p>
-                                    </div>
-                        </div>
-                        <div class="catalog_card arab_black">
-                                    <div>
-                                                <img class="catalog_card_img" src="pic/product/arab_black.png"
-                                                            alt="photo">
-                                    </div>
-                                    <div class="card_text_box">
-                                                <h3 class="card_name">ELLERY X M'O CAPSULE</h3>
-                                                <p class="card_text">Known for her sculptural takes on traditional
-                                                            tailoring, Australian
-                                                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                                                <p class="card_price">$52.00</p>
-                                    </div>
-                        </div>
-                        <div class="catalog_card blackMen_greenT-shirt">
-                                    <div>
-                                                <img class="catalog_card_img"
-                                                            src="pic/product/blackMen_greenT-shirt.png" alt="photo">
-                                    </div>
-                                    <div class="card_text_box">
-                                                <h3 class="card_name">ELLERY X M'O CAPSULE</h3>
-                                                <p class="card_text">Known for her sculptural takes on traditional
-                                                            tailoring, Australian
-                                                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                                                <p class="card_price">$52.00</p>
-                                    </div>
-                        </div>
-            </div>
-
-            <div class="catalog_list_box">
-                        <a class="catalog_list" href="#"><img src="catalog_pic/catalog-list's.svg" alt="catalog"></a>
-            </div>
-
-            <footer>
-                        <div class="black_footer">
-                                    <div class="container">
-                                                <div class="black_footer_flexBox">
-                                                            <div class="pic_center_flex">
-                                                                        <img class="black_footer_pic"
-                                                                                    src="pic/black_footer_car.svg"
-                                                                                    alt="pic">
-                                                                        <h2 class="black_footer_name">Free Delivery</h2>
-                                                                        <p class="black_footer_text">
-                                                                                    Worldwide delivery on all. Authorit
-                                                                                    tively morph next-generation innov
-                                                                                    tion with
-                                                                                    extensive
-                                                                                    models.
-                                                                        </p>
-                                                            </div>
-                                                            <div class="pic_center_flex">
-                                                                        <img class="black_footer_pic"
-                                                                                    src="pic/black_footer_percent.svg"
-                                                                                    alt="pic">
-                                                                        <h2 class="black_footer_name">Sales & discounts
-                                                                        </h2>
-                                                                        <p class="black_footer_text">
-                                                                                    Worldwide delivery on all. Authorit
-                                                                                    tively morph
-                                                                                    next-generation innov tion with
-                                                                                    extensive
-                                                                                    models.
-                                                                        </p>
-                                                            </div>
-                                                            <div class="pic_center_flex">
-                                                                        <img class="black_footer_pic"
-                                                                                    src="pic/black_footer_korona.svg"
-                                                                                    alt="pic">
-                                                                        <h2 class="black_footer_name">Quality assurance
-                                                                        </h2>
-                                                                        <p class="black_footer_text">
-                                                                                    Worldwide delivery on all. Authorit
-                                                                                    tively morph
-                                                                                    next-generation innov tion with
-                                                                                    extensive
-                                                                                    models.
-                                                                        </p>
-                                                            </div>
-                                                </div>
-                                    </div>
-                        </div>
-
-                        <div class="grey_footer_box">
-                                    <div class="container">
-                                                <div class="woman_face_footer_box">
-                                                            <img class="woman_face_footer"
-                                                                        src="pic/woman_face_footer.png" alt="photo">
-
-
-                                                            <div class="grey_footer_woman_text_box">
-                                                                        <p class="grey_footer_woman_text">
-                                                                                    “Vestibulum quis porttitor dui!
-                                                                                    Quisque viverra
-                                                                                    nunc mi, a
-                                                                                    pulvinar
-                                                                                    purus condimentum“
-                                                                        </p>
-                                                            </div>
-
-                                                </div>
-                                                <div class="grey_footer_email_box">
-                                                            <h2 class="grey_footer_name">SUBSCRIBE</h2>
-                                                            <p class="grey_footer_text">FOR OUR NEWLETTER AND PROMOTION
-                                                            </p>
-                                                            <form class="form_footer_email" action="#">
-                                                                        <input class="grey_footer_email" type="email"
-                                                                                    placeholder="Enter Youur Email">
-                                                                        <button class="button_footer"
-                                                                                    type="submit">Subscribe</button>
-
-                                                            </form>
-
-                                                </div>
-                                    </div>
-
-                                    <div class="grey_footer-background">
-                                    </div>
-                        </div>
-
-
-                        <div class="protection">
-                                    <div>
-                                                <p class="protection_text">© 2021 Brand All Rights Reserved.</p>
-                                    </div>
-                                    <div class="link_box">
-                                                <a class="footer_link" href="http://www.facebook.com"><img
-                                                                        src="pic/link_facebook.svg" alt="facebook"></a>
-                                                <a class="footer_link" href="https://instagram-my.ru"><img
-                                                                        src="pic/link_instagram.svg"
-                                                                        alt="instagram"></a>
-                                                <a class="footer_link" href="#"><img src="pic/link_hz.svg" alt=""></a>
-                                                <a class="footer_link" href="https://twitter.com/"><img
-                                                                        src="pic/link_twitter.svg" alt=""></a>
-                                    </div>
-                        </div>
-            </footer>
-
+            <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+            <script src="js/catalogComponent.js"></script>
+            <script src="js/searchComponent.js"></script>
+            <script src="js/cartComponent.js"></script>
+            <script src="js/main.js"></script>
             <script src="style.js"></script>
 
 </body>
