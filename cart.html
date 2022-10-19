@@ -18,9 +18,7 @@
                                                             <img class="logo_margin" src="pic/logo_botton.svg"
                                                                         alt="logo">
                                                 </a>
-                                                <a href="#" class="menu_magnifier_botton link">
-                                                            <img src="pic/magnifier_botton.svg" alt="magn">
-                                                </a>
+                                                <search></search>
                                     </div>
                                     <div class="menu_other_botton">
                                                 <a href="#" class="menu_dashes_botton link">
@@ -79,78 +77,7 @@
             </div>
 
             <div class="b-flexCart container b-flexCart_marginTop b-flexCart_flex">
-                        <div class="b-flexCart__cart">
-                                    <div class="b-cartPay">
-                                                <img class="b-cartPay__img" src="pic/product/man_blue_hoodies.png"
-                                                            alt="product">
-
-                                                <div class="b-cartPay__text b-cartPayText">
-                                                            <h2
-                                                                        class="b-cartPayText__name b-cartPayText__name_marginBottom">
-                                                                        MANGO PEOPLE T-SHIRT
-                                                            </h2>
-                                                            <div class="b-price b-price_flex b-price_marginBottom">
-                                                                        <p class="b-price__text">Price:</p>
-                                                                        <p
-                                                                                    class="b-price__text b-price__text_marginLeft b-price__text_orange">
-                                                                                    $300</p>
-                                                            </div class="b-price b-price_marginBottom">
-                                                            <div class="b-price b-price_marginBottom">
-                                                                        <p class="b-price__text">Color: Red</p>
-                                                            </div>
-                                                            <div class="b-price b-price_marginBottom">
-                                                                        <p class="b-price__text">Size: Xl</p>
-                                                            </div class="b-price b-price_marginBottom">
-                                                            <div class="b-price b-price_flex">
-                                                                        <p class="b-price__text">Quantity:</p>
-                                                                        <p
-                                                                                    class="b-price__size b-price__size_marginLeft">
-                                                                                    2
-                                                                        </p>
-                                                            </div>
-                                                </div>
-                                                <a href="#" class="b-cartPay__close"><img src="pic/closeBig.svg"
-                                                                        alt="close"></a>
-                                    </div>
-                                    <div class="b-cartPay b-cartPay_marginTop">
-                                                <img class="b-cartPay__img" src="pic/product/blackMen_redShirt.png"
-                                                            alt="product">
-                                                <div class="b-cartPay__text b-cartPayText">
-                                                            <h2
-                                                                        class="b-cartPayText__name b-cartPayText__name_marginBottom">
-                                                                        MANGO PEOPLE T-SHIRT
-                                                            </h2>
-                                                            <div class="b-price b-price_flex b-price_marginBottom">
-                                                                        <p class="b-price__text">Price:</p>
-                                                                        <p
-                                                                                    class="b-price__text b-price__text_marginLeft b-price__text_orange">
-                                                                                    $300</p>
-                                                            </div class="b-price b-price_marginBottom">
-                                                            <div class="b-price b-price_marginBottom">
-                                                                        <p class="b-price__text">Color: Red</p>
-                                                            </div>
-                                                            <div class="b-price b-price_marginBottom">
-                                                                        <p class="b-price__text">Size: Xl</p>
-                                                            </div class="b-price b-price_marginBottom">
-                                                            <div class="b-price b-price_flex">
-                                                                        <p class="b-price__text">Quantity:</p>
-                                                                        <p
-                                                                                    class="b-price__size b-price__size_marginLeft">
-                                                                                    2
-                                                                        </p>
-                                                            </div>
-                                                </div>
-                                                <a href="#" class="b-cartPay__close"><img src="pic/closeBig.svg"
-                                                                        alt="close"></a>
-                                    </div>
-                                    <div class="b-bottonPay b-bottonPay_flex b-bottonPay_marginTop">
-                                                <a class="b-bottonPay__bottonClear" href="index.html">CLEAR SHOPPING
-                                                            CART</a>
-
-                                                <a class="b-bottonPay__bottonContinue" href="index.html">CONTINUE
-                                                            SHOPPING</a>
-                                    </div>
-                        </div>
+                        <cart :products="cartItems"></cart>
                         <div class="b-flexCart__pay b-flexCart__pay_margin">
                                     <form class="b-payForm b-payForm_flex" action="#">
                                                 <h2 class="b-payForm__name b-payForm__name_marginButtom">SHIPPING ADRESS
@@ -165,21 +92,7 @@
                                                             type="submit">GET A
                                                             QUOTE</button>
                                     </form>
-                                    <div class="b-proceed b-proceed_flex b-proceed_margin">
-                                                <div class="b-proceed__subBox b-proceed__subBox_flex">
-                                                            <p class="b-proceed__sub">SUB TOTAL</p>
-                                                            <p class="b-proceed__subPrice">$900</p>
-                                                </div>
-
-                                                <div class="b-proceed__grandBox b-proceed__grandBox_flex">
-                                                            <p class="b-proceed__grand">GRAND TOTAL</p>
-                                                            <p class="b-proceed__grandPrice">$900</p>
-                                                </div>
-
-                                                <img class="b-proceed__line" src="product_pic/grey_line.svg" alt="line">
-                                                <a class="b-proceed__botton b-proceed__botton_margin" href="#">PROCEED
-                                                            TO CHECKOUT</a>
-                                    </div>
+                                    <proceed :products="cartItems"></proceed>
                         </div>
             </div>
 

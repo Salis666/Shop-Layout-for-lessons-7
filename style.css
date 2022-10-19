@@ -1682,6 +1682,7 @@
   max-height: 306px;
   -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
           box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  margin: 20px 0px;
 }
 
 .b-cartPay_marginTop {
