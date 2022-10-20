@@ -1,14 +1,33 @@
 Vue.component('cart', {
-	props: ['products'],
+	props: ['products', 'visibility'],
 	template: `
-	<div class="b-flexCart__cart">
-		<cartProduct 
-			v-for="item of products"
-			:key="item.id"
-			:img="item.img" 
-			:product="item">
-		</cartProduct>
-	</div>
+	<div class="b-flexCart container b-flexCart_marginTop b-flexCart_flex" v-show="visibility">
+	<h1>CART</h1>
+                <div class="b-flexCart__cart">
+					<cartProduct 
+						v-for="item of products"
+						:key="item.id"
+						:img="item.img" 
+						:product="item">
+					</cartProduct>
+				</div>
+                <div class="b-flexCart__pay b-flexCart__pay_margin">
+                            <form class="b-payForm b-payForm_flex" action="#">
+                                        <h2 class="b-payForm__name b-payForm__name_marginButtom">SHIPPING ADRESS
+                                        </h2>
+                                        <input class="b-payForm__sityInput b-payForm__sityInput_marginButtom"
+                                                    placeholder="Bangladesh">
+                                        <input class="b-payForm__stateInput b-payForm__stateInput_marginButtom"
+                                                    placeholder="State">
+                                        <input class="b-payForm__postcodeInput b-payForm__postcodeInput_marginButtom"
+                                                    placeholder="Postcode / Zip">
+                                        <button class="b-payForm__buttonSubmit b-payForm__buttonSubmit_marginButtom"
+                                                    type="submit">GET A
+                                                    QUOTE</button>
+                            </form>
+                            <proceed :products="products"></proceed>
+                </div>
+    </div>
 	`
 });
 

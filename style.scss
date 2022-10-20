@@ -541,9 +541,18 @@
 
 //Страница каталога
 
+.productPay {
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header_catalog {
   background: #F8F3F4;
   width: 100%;
+
+
 
   .container {
     padding: 60px 0;

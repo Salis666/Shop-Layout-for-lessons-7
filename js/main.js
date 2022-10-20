@@ -1,7 +1,9 @@
+
 const app = new Vue ({
 	el: '#app',
 	data () {
 		return {
+			showCart: false,
 			products: [],
 			filtered: [],
 			cartItems: []
@@ -17,18 +19,20 @@ const app = new Vue ({
 			let regexp = new RegExp(userSearch, 'i');
 			this.filtered = this.products.filter(el => regexp.test(el.name_product));
 		},
-		addProduct(item){
+		add(item){
 			this.getJson(`cart.json`)
 			.then(data => {
-				if(data.result === 1){
-					let find = this.cartItems.find(el => el.id === item.id);
-					if(find){
-						find.quantity++;
-					} else {
-						const prod = Object.assign({quantity: 1}, item);
-						this.cartItems.push(prod)
-					}
+				let find = this.cartItems.find(el => el.id === item.id);
+				if(find){
+					find.quantity++;
+					console.log('quantity +')
+				} else {
+					const prod = Object.assign({quantity: 1}, item);
+					this.cartItems.push(prod);
+					console.log('product push');
+
 				}
+
 			})
 		},
 	},

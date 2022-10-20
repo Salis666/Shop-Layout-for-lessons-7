@@ -11,13 +11,16 @@ Vue.component ('catalog', {
 		</div>
 	`
 });
-Vue.component('product',{
+Vue.component('product', {
 	props: ['product', 'img'],
 	template: `
 	<div class="catalog_card product.style_name">
-            <div>
+            <div class="box_product_pic">
                         <img class="catalog_card_img" :src="img"
                                     alt="photo">
+                        <div class="productPay">
+	                                <button @click="$root.add(product)">КУПИТЬ</button>
+	                    </div>
             </div>
             <div class="card_text_box">
                         <h3 class="card_name">{{product.name_product}}</h3>

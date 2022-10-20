@@ -29,8 +29,8 @@
                                                                     <img class="other_botton_margin link"
                                                                                 src="pic/pers_button.svg" alt="pers">
                                                         </a>
-                                                        <a href="cart.html" class="menu_basket_botton link">
-                                                                    <img src="pic/basket_botton.svg" alt="bask">
+                                                        <a href="#" class="menu_basket_botton link">
+                                                                    <img src="pic/basket_botton.svg" alt="bask" @click="showCart = !showCart">
                                                         </a>
                                             </div>
                                 </div>
@@ -104,7 +104,8 @@
                                             </div>
                                 </div>
                     </div>
-
+                    <cart :products="cartItems" :visibility="showCart"></cart>
+                    <h1>PRODUCTS</h1>
                     <catalog :products="filtered"></catalog>
 
                     <div class="catalog_list_box">
