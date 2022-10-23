@@ -27,10 +27,10 @@
                                                         </a>
                                                         <a href="registration.html" class="menu_pers_botton link">
                                                                     <img class="other_botton_margin link"
-                                                                                src="pic/pers_button.svg" alt="pers">
+                                                                         src="pic/pers_button.svg" alt="pers">
                                                         </a>
-                                                        <a href="#" class="menu_basket_botton link">
-                                                                    <img src="pic/basket_botton.svg" alt="bask" @click="showCart = !showCart">
+                                                        <a href="cart.html" class="menu_basket_botton link">
+                                                                    <img src="pic/basket_botton.svg" alt="bask">
                                                         </a>
                                             </div>
                                 </div>
@@ -104,8 +104,7 @@
                                             </div>
                                 </div>
                     </div>
-                    <cart :products="cartItems" :visibility="showCart"></cart>
-                    <h1>PRODUCTS</h1>
+                    <cart ref="cart" style="display: none"></cart>
                     <catalog :products="filtered"></catalog>
 
                     <div class="catalog_list_box">
@@ -165,7 +164,7 @@
                                             <div class="container">
                                                         <div class="woman_face_footer_box">
                                                                     <img class="woman_face_footer"
-                                                                                src="pic/woman_face_footer.png" alt="photo">
+                                                                         src="pic/woman_face_footer.png" alt="photo">
 
 
                                                                     <div class="grey_footer_woman_text_box">
@@ -205,13 +204,13 @@
                                             </div>
                                             <div class="link_box">
                                                         <a class="footer_link" href="http://www.facebook.com"><img
-                                                                                src="pic/link_facebook.svg" alt="facebook"></a>
+                                                                src="pic/link_facebook.svg" alt="facebook"></a>
                                                         <a class="footer_link" href="https://instagram-my.ru"><img
                                                                                 src="pic/link_instagram.svg"
                                                                                 alt="instagram"></a>
                                                         <a class="footer_link" href="#"><img src="pic/link_hz.svg" alt=""></a>
                                                         <a class="footer_link" href="https://twitter.com/"><img
-                                                                                src="pic/link_twitter.svg" alt=""></a>
+                                                                src="pic/link_twitter.svg" alt=""></a>
                                             </div>
                                 </div>
                     </footer>

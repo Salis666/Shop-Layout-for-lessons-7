@@ -153,7 +153,8 @@
   grid-gap: 30px;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "woman_pic      man_pic        kid_pic" "accesories_pic accesories_pic accesories_pic";
+      grid-template-areas: "woman_pic      man_pic        kid_pic"
+ "accesories_pic accesories_pic accesories_pic";
 }
 
 .grid_box .grid_box_img {
@@ -216,7 +217,8 @@
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-      grid-template-areas: "man_blue_jaket woman_black_jaket man_blue_hoodies" "man_blue_shirt woman_blue_jaket woman_beige_shirt";
+      grid-template-areas: "man_blue_jaket woman_black_jaket man_blue_hoodies"
+ "man_blue_shirt woman_blue_jaket woman_beige_shirt";
 }
 
 .product_card_box .product_card_gridBox .man_blue_jaket:hover .box_product_pic .blue_jaket {
@@ -695,7 +697,9 @@
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-      grid-template-areas: "man_blue_jaket blackMen_redShirt man_blue_hoodies" "man_blue_shirt arab_whiteSweater arab_whiteT-shirt" "arab_whiteShirt arab_black blackMen_greenT-shirt";
+      grid-template-areas: "man_blue_jaket blackMen_redShirt man_blue_hoodies"
+ "man_blue_shirt arab_whiteSweater arab_whiteT-shirt"
+ "arab_whiteShirt arab_black blackMen_greenT-shirt";
 }
 
 .catalog_grid .catalog_card {
@@ -797,7 +801,9 @@
     grid-gap: 30px;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "man_blue_jaket woman_black_jaket" "man_blue_hoodies man_blue_shirt" "woman_blue_jaket woman_beige_shirt";
+        grid-template-areas: "man_blue_jaket woman_black_jaket"
+ "man_blue_hoodies man_blue_shirt"
+ "woman_blue_jaket woman_beige_shirt";
   }
   .black_footer .black_footer_flexBox {
     -webkit-box-orient: vertical;
@@ -882,7 +888,10 @@
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 16px;
-        grid-template-areas: "man_blue_jaket blackMen_redShirt" "man_blue_shirt arab_whiteSweater" "arab_whiteT-shirt arab_whiteShirt" "arab_black blackMen_greenT-shirt";
+        grid-template-areas: "man_blue_jaket blackMen_redShirt"
+ "man_blue_shirt arab_whiteSweater"
+ "arab_whiteT-shirt arab_whiteShirt"
+ "arab_black blackMen_greenT-shirt";
   }
   .catalog_grid .man_blue_hoodies {
     display: none;

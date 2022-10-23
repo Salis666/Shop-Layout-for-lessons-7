@@ -1,14 +1,53 @@
 Vue.component('cart', {
-	props: ['products', 'visibility'],
+	data(){
+		return {
+			cartUrl: '/getBasket.json',
+			cartItems: [],
+		}
+	},
+	methods: {
+		add(item){
+			let find = this.cartItems.find(el => el.id === item.id);
+			if(find){
+				this.$parent.putJson(`/api/cart/${find.id}`, {quantity: 1})
+				.then(data => {
+					if(data.result === 1){
+						find.quantity++
+					}
+				})
+			} else {
+				const prod = Object.assign({quantity: 1}, item);
+				this.$parent.postJson(`/api/cart`, prod)
+				.then(data => {
+					if (data.result === 1) {
+						this.cartItems.push(prod)
+					}
+				})
+			}
+		},
+		remove(item){
+			this.cartItems.find(el => el.id === item.id).quantity--;
+
+		},
+	},
+	mounted(){
+		this.$parent.getJson(`/api/cart`)
+		.then(data => {
+			for (let item of data){
+				this.$data.cartItems.push(item);
+			}
+		});
+	},
+	props: ['products'],
 	template: `
-	<div class="b-flexCart container b-flexCart_marginTop b-flexCart_flex" v-show="visibility">
-	<h1>CART</h1>
+	<div class="b-flexCart container b-flexCart_marginTop b-flexCart_flex">
                 <div class="b-flexCart__cart">
-					<cartProduct 
-						v-for="item of products"
+					<cartProduct
+                        v-for="item of cartItems"
 						:key="item.id"
 						:img="item.img" 
-						:product="item">
+						:product="item"
+                        @remove="remove">
 					</cartProduct>
 				</div>
                 <div class="b-flexCart__pay b-flexCart__pay_margin">
@@ -25,7 +64,7 @@ Vue.component('cart', {
                                                     type="submit">GET A
                                                     QUOTE</button>
                             </form>
-                            <proceed :products="products"></proceed>
+                            <proceed :products="cartItems"></proceed>
                 </div>
     </div>
 	`
@@ -60,7 +99,7 @@ Vue.component('cartProduct', {
                                         </p>
                             </div>
                 </div>
-                <a href="#" class="b-cartPay__close"><img src="pic/closeBig.svg"
+                <a href="#" class="b-cartPay__close" @click="$root.$refs.cart.remove(product)"><img src="pic/closeBig.svg"
                                         alt="close"></a>
     </div>
 	`
@@ -69,24 +108,29 @@ Vue.component('cartProduct', {
 Vue.component('proceed', {
 	props: ['products'],
 	methods: {
-		getTotalPrice() {
+		getTotalPrice(products) {
 			let totalPrice = 0;
-			for (let i = 0; i < this.products.length; i ++) {
-			    totalPrice += this.products[i].price * this.products[i].quantity;
+			if(products) {
+				for (let item of products) {
+					totalPrice += item.price * item.quantity;
+				}
+				return totalPrice;
+			} else {
+				return 0
 			}
-			return totalPrice;
+
 		}
 	},
 	template: `
 	<div class="b-proceed b-proceed_flex b-proceed_margin">
                 <div class="b-proceed__subBox b-proceed__subBox_flex">
                             <p class="b-proceed__sub">SUB TOTAL</p>
-                            <p class="b-proceed__subPrice">$ {{getTotalPrice()}}</p>
+                            <p class="b-proceed__subPrice">$ {{getTotalPrice(products)}}</p>
                 </div>
 
                 <div class="b-proceed__grandBox b-proceed__grandBox_flex">
                             <p class="b-proceed__grand">GRAND TOTAL</p>
-                            <p class="b-proceed__grandPrice">$ {{getTotalPrice()}}</p>
+                            <p class="b-proceed__grandPrice">$ {{getTotalPrice(products)}}</p>
                 </div>
 
                 <img class="b-proceed__line" src="product_pic/grey_line.svg" alt="line">
