@@ -19,7 +19,7 @@ Vue.component('product', {
                         <img class="catalog_card_img" :src="img"
                                     alt="photo">
                         <div class="productPay">
-	                                <button @click="$root.add(product)">КУПИТЬ</button>
+	                                <button @click="$root.$refs.cart.add(product)">КУПИТЬ</button>
 	                    </div>
             </div>
             <div class="card_text_box">

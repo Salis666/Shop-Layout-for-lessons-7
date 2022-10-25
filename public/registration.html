@@ -5,12 +5,11 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Cart</title>
+            <title>Registration</title>
             <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="app">
             <div class="menu">
                         <div class="container">
                                     <div class="menu_logo_magnifier_botton">
@@ -18,7 +17,9 @@
                                                             <img class="logo_margin" src="pic/logo_botton.svg"
                                                                         alt="logo">
                                                 </a>
-                                                <search></search>
+                                                <a href="#" class="menu_magnifier_botton link">
+                                                            <img src="pic/magnifier_botton.svg" alt="magn">
+                                                </a>
                                     </div>
                                     <div class="menu_other_botton">
                                                 <a href="#" class="menu_dashes_botton link">
@@ -27,7 +28,7 @@
                                                 </a>
                                                 <a href="registration.html" class="menu_pers_botton link">
                                                             <img class="other_botton_margin link"
-                                                                        src="pic/pers_button.svg" alt="pers">
+                                                                 src="pic/pers_button.svg" alt="pers">
                                                 </a>
                                                 <a href="cart.html" class="menu_basket_botton link">
                                                             <img src="pic/basket_botton.svg" alt="bask">
@@ -70,86 +71,67 @@
 
                         <div class="header_catalog">
                                     <div class="container">
-                                                <h1 class="catalog_header_name">SHOPPING CART</h1>
+                                                <h1 class="catalog_header_name">REGISTRATION</h1>
                                     </div>
                         </div>
 
             </div>
 
-            <div class="b-flexCart container b-flexCart_marginTop b-flexCart_flex">
-                        <cart :products="cartItems"></cart>
-                        <div class="b-flexCart__pay b-flexCart__pay_margin">
-                                    <form class="b-payForm b-payForm_flex" action="#">
-                                                <h2 class="b-payForm__name b-payForm__name_marginButtom">SHIPPING ADRESS
-                                                </h2>
-                                                <input class="b-payForm__sityInput b-payForm__sityInput_marginButtom"
-                                                            placeholder="Bangladesh">
-                                                <input class="b-payForm__stateInput b-payForm__stateInput_marginButtom"
-                                                            placeholder="State">
-                                                <input class="b-payForm__postcodeInput b-payForm__postcodeInput_marginButtom"
-                                                            placeholder="Postcode / Zip">
-                                                <button class="b-payForm__buttonSubmit b-payForm__buttonSubmit_marginButtom"
-                                                            type="submit">GET A
-                                                            QUOTE</button>
+            <div class="container">
+                        <div class="b-reg b-reg_margin ">
+                                    <form class="b-reg__regForm b-regForm b-regForm_flex" action="#">
+                                                <h2 class="b-regForm__name b-regForm__name_margin">Your Name</h2>
+                                                <input class="b-regForm__input b-regForm__input_marginBottom"
+                                                            type="text" placeholder="First Name">
+                                                <input class="b-regForm__input" type="text" placeholder="Last Name">
+                                                <div
+                                                            class="b-regForm__gender b-regForm__gender_flex b-regForm__gender_margin">
+                                                            <input name="gender" type="radio">
+                                                            <p>Male</p>
+                                                            <input name="gender" type="radio">
+                                                            <p>Female</p>
+                                                            <input type="radio" name="gender">
+                                                            <p>Other</p>
+                                                </div>
+                                                <h2 class="b-regForm__name b-regForm__name_margin">Login details</h2>
+                                                <input class="b-regForm__input b-regForm__input_marginBottom"
+                                                            type="email" placeholder="Email">
+                                                <input class="b-regForm__input" type="password" placeholder="Password">
+                                                <p class="b-regForm__text b-regForm__text_margin">Please use 8 or more
+                                                            characters,
+                                                            with at least 1 number
+                                                            and a
+                                                            mixture of uppercase and lowercase letters
+                                                </p>
+
+                                                <button class="b-regForm__button" type="submit">
+                                                            JOIN NOW <img src="b-block/arrowRight.svg" alt="">
+                                                </button>
+
                                     </form>
-                                    <proceed :products="cartItems"></proceed>
+                                    <div class="b-reg__perks b-perks b-perks_margin">
+                                                <h1 class="b-perks__name">LOYALTY HAS ITS PERKS</h1>
+                                                <p class="b-perks__text">Get in on the loyalty program where you can
+                                                            earn points and
+                                                            unlock serious perks.
+                                                            Starting with these as soon as you join:</p>
+                                                <ul class="b-perks__list b-perks__list_margin">
+                                                            <li>15% off welcome offer</li>
+                                                            <li>Free shipping, returns and exchanges on all orders</li>
+                                                            <li>$10 off a purchase on your birthday</li>
+                                                            <li>Early access to products</li>
+                                                            <li>Exclusive offers & rewards</li>
+                                                </ul>
+                                    </div>
                         </div>
             </div>
 
             <footer>
-                        <div class="black_footer">
-                                    <div class="container">
-                                                <div class="black_footer_flexBox">
-                                                            <div class="pic_center_flex">
-                                                                        <img class="black_footer_pic"
-                                                                                    src="pic/black_footer_car.svg"
-                                                                                    alt="pic">
-                                                                        <h2 class="black_footer_name">Free Delivery</h2>
-                                                                        <p class="black_footer_text">
-                                                                                    Worldwide delivery on all. Authorit
-                                                                                    tively morph next-generation innov
-                                                                                    tion with
-                                                                                    extensive
-                                                                                    models.
-                                                                        </p>
-                                                            </div>
-                                                            <div class="pic_center_flex">
-                                                                        <img class="black_footer_pic"
-                                                                                    src="pic/black_footer_percent.svg"
-                                                                                    alt="pic">
-                                                                        <h2 class="black_footer_name">Sales & discounts
-                                                                        </h2>
-                                                                        <p class="black_footer_text">
-                                                                                    Worldwide delivery on all. Authorit
-                                                                                    tively morph
-                                                                                    next-generation innov tion with
-                                                                                    extensive
-                                                                                    models.
-                                                                        </p>
-                                                            </div>
-                                                            <div class="pic_center_flex">
-                                                                        <img class="black_footer_pic"
-                                                                                    src="pic/black_footer_korona.svg"
-                                                                                    alt="pic">
-                                                                        <h2 class="black_footer_name">Quality assurance
-                                                                        </h2>
-                                                                        <p class="black_footer_text">
-                                                                                    Worldwide delivery on all. Authorit
-                                                                                    tively morph
-                                                                                    next-generation innov tion with
-                                                                                    extensive
-                                                                                    models.
-                                                                        </p>
-                                                            </div>
-                                                </div>
-                                    </div>
-                        </div>
-
                         <div class="grey_footer_box">
                                     <div class="container">
                                                 <div class="woman_face_footer_box">
                                                             <img class="woman_face_footer"
-                                                                        src="pic/woman_face_footer.png" alt="photo">
+                                                                 src="pic/woman_face_footer.png" alt="photo">
 
 
                                                             <div class="grey_footer_woman_text_box">
@@ -189,24 +171,17 @@
                                     </div>
                                     <div class="link_box">
                                                 <a class="footer_link" href="http://www.facebook.com"><img
-                                                                        src="pic/link_facebook.svg" alt="facebook"></a>
+                                                        src="pic/link_facebook.svg" alt="facebook"></a>
                                                 <a class="footer_link" href="https://instagram-my.ru"><img
                                                                         src="pic/link_instagram.svg"
                                                                         alt="instagram"></a>
                                                 <a class="footer_link" href="#"><img src="pic/link_hz.svg" alt=""></a>
                                                 <a class="footer_link" href="https://twitter.com/"><img
-                                                                        src="pic/link_twitter.svg" alt=""></a>
+                                                        src="pic/link_twitter.svg" alt=""></a>
                                     </div>
                         </div>
             </footer>
-    </div>
 
-            <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-            <script src="js/catalogComponent.js"></script>
-            <script src="js/searchComponent.js"></script>
-            <script src="js/cartComponent.js"></script>
-            <script src="js/main.js"></script>
             <script src="style.js"></script>
 
 </body>
