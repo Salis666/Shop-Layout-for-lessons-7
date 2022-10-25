@@ -26,8 +26,24 @@ Vue.component('cart', {
 			}
 		},
 		remove(item){
-			this.cartItems.find(el => el.id === item.id).quantity--;
-
+			let find = this.cartItems.find(el => el.id === item.id);
+			if(find) {
+				if(find.quantity > 1) {
+					this.$parent.putJson(`/api/cart/${find.id}`, {quantity: -1})
+					.then(data => {
+						if (data.result === 1) {
+								item.quantity--;
+						}
+					})
+				} else {
+					this.$parent.deleteJson(`/api/cart/${find.id}`, item)
+					.then(data => {
+						if (data.result === 1) {
+							this.cartItems.splice(this.cartItems.indexOf(item), 1);
+						}
+					})
+				}
+			}
 		},
 	},
 	mounted(){

@@ -6,7 +6,7 @@
         "price": 52,
         "img": "../pic/product/man_blue_jaket.png",
         "style_name": "man_blue_jaket",
-        "quantity": 5
+        "quantity": 3
     },
     {
         "id": 2,
@@ -15,15 +15,6 @@
         "price": 52,
         "img": "../pic/product/blackMen_redShirt.png",
         "style_name": "blackMen_redShirt",
-        "quantity": 12
-    },
-    {
-        "quantity": 1,
-        "id": 5,
-        "name_product": "ELLERY X M'O CAPSULE 5",
-        "product_description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-        "price": 52,
-        "img": "../pic/product/arab_whiteSweater.png",
-        "style_name": "arab_whiteSweater"
+        "quantity": 1
     }
 ]

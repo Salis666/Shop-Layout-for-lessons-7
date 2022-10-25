@@ -1,7 +1,8 @@
 const express = require('express');
 const fs = require('fs');
-const router = express.Router();
 const handler = require('./handler');
+const router = express.Router();
+
 
 router.get('/', (req, res) => {
     fs.readFile('server/db/cart.json', 'utf-8', (err, data) => {
@@ -17,6 +18,10 @@ router.post('/', (req, res) => {
 });
 router.put('/:id', (req, res) => {
     handler(req, res, 'change', 'server/db/cart.json');
+});
+
+router.delete(`/:id`, (req, res) => {
+    handler(req, res, 'remove', `server/db/cart.json`);
 });
 
 module.exports = router;
