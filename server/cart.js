@@ -9,7 +9,7 @@ let change = (cart, req) => {
 };
 
 let remove = (cart, req) => {
-    let find = cart.find(el => +el.id === req.body.id);
+    let find = cart.find(el => +el.id === +req.params.id);
     let cartContent = cart;
     cartContent.splice(cartContent.indexOf(find), 1);
     return JSON.stringify(cart, null, 4);

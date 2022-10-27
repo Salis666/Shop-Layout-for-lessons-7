@@ -36,7 +36,7 @@ Vue.component('cart', {
 						}
 					})
 				} else {
-					this.$parent.deleteJson(`/api/cart/${find.id}`, item)
+					this.$parent.deleteJson(`/api/cart/${find.id}`, find)
 					.then(data => {
 						if (data.result === 1) {
 							this.cartItems.splice(this.cartItems.indexOf(item), 1);
